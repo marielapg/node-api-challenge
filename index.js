@@ -12,3 +12,8 @@ I need this code, but don't know where, perhaps should make some middleware, don
 
 Go code!
 */
+
+const server = require('./api/server.js');
+
+const port = process.env.PORT || 6009;
+server.listen(port, () => console.log(`\n** Running on port ${port} **\n`));
